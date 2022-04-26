@@ -14,6 +14,8 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  margin-left: 9px;
 }
 
 p {
@@ -40,6 +42,10 @@ main img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.group:last-child {
+  align-items: flex-start;
 }
 
 .item {
