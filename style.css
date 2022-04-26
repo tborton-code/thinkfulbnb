@@ -143,4 +143,14 @@ footer p {
   header nav ul {
     margin: 30px 0 0;
   }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+  }
+
+  form div {
+    flex-direction: column;
+  }
 }
