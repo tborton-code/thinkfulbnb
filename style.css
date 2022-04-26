@@ -136,5 +136,11 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 480px){
-  
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul {
+    margin: 30px 0 0;
+  }
 }
