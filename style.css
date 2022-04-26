@@ -14,8 +14,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
-  display: flex;
-  margin-left: 9px;
+  align-self: flex-start;
 }
 
 p {
@@ -44,12 +43,13 @@ main img {
   align-items: center;
 }
 
-.group:last-child {
+/* .group:last-child {
   align-items: flex-start;
-}
+} */
 
 .item {
   margin: 10px;
+  flex: 1;
   width: 100%;
 }
 
