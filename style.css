@@ -39,11 +39,12 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
-  flex: 1;
   margin: 10px;
+  width: 100%;
 }
 
 .item-double {
