@@ -64,6 +64,12 @@ header {
   color: #fff;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
 header nav ul li {
   list-style-type: none;
 }
