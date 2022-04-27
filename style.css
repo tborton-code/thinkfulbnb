@@ -112,7 +112,6 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 60%;
   min-width:50px
 }
 
@@ -167,6 +166,15 @@ footer p {
 
   .group{
     flex-direction: row;
+  }
+
+  #about .item{
+    width: 25%;
+  }
+
+  #about p{
+    justify-self: center;
+    align-self: center;
   }
 
   .mobileGroup{
