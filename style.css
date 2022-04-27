@@ -147,6 +147,7 @@ footer p {
   }
   header nav ul {
     margin: 30px 0 0;
+    justify-content: flex-start;
   }
 
   form {
@@ -158,6 +159,11 @@ footer p {
   form div {
     flex-direction: column;
   }
+
+  form select,
+  form input {
+  width: 100%
+}
 
   form button {
     font-size: 24px;
