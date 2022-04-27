@@ -168,8 +168,18 @@ footer p {
     flex-wrap: wrap;
   }
 
+  #ideas .group{
+    justify-content: space-between;
+  }
+
+  #ideas .group div{
+    display: flex;
+    flex-direction: column;
+  }
+
   #about .item{
     width: 25%;
+    margin: 10px;
   }
 
   .mobileGroup{
