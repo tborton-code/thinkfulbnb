@@ -168,8 +168,9 @@ footer p {
     flex-wrap: wrap;
   }
 
-  #ideas .group{
-    justify-content: space-between;
+  .horizontalGrouping{
+    display: flex;
+    flex-direction: row;
   }
 
   #ideas .group div{
@@ -179,6 +180,14 @@ footer p {
 
   #about .item{
     width: 25%;
+    margin: 10px;
+  }
+
+  #ideas .item{
+    max-width: 1200px;
+  }
+
+  #ideas div div div{
     margin: 10px;
   }
 
