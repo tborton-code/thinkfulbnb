@@ -14,7 +14,6 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
-  align-self: flex-start;
 }
 
 p {
@@ -44,7 +43,7 @@ main img {
 }
 
 .item {
-  margin: 10px;
+  margin: 10px 0;
   flex: 1;
   width: 100%;
 }
@@ -166,15 +165,11 @@ footer p {
 
   .group{
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #about .item{
     width: 25%;
-  }
-
-  #about p{
-    justify-self: center;
-    align-self: center;
   }
 
   .mobileGroup{
