@@ -43,10 +43,6 @@ main img {
   align-items: center;
 }
 
-/* .group:last-child {
-  align-items: flex-start;
-} */
-
 .item {
   margin: 10px;
   flex: 1;
@@ -63,16 +59,19 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 17vw;
   color: #fff;
 }
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 15px;
 }
@@ -96,11 +95,14 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 form div {
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap
 }
 
 form label {
@@ -110,14 +112,15 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 60%;
+  min-width:50px
 }
 
 form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 7vw;
   padding: 15px;
   width: 100%;
 }
@@ -136,8 +139,11 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 480px){
+  .logo {
+    font-size: 72px;
+  }
   header {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   header nav ul {
@@ -145,12 +151,26 @@ footer p {
   }
 
   form {
-    display: flex;
+    position: static;
+    flex-direction: row;
     justify-content: space-between;
-    width: fit-content;
   }
 
   form div {
     flex-direction: column;
+  }
+
+  form button {
+    font-size: 24px;
+    align-self: flex-end;
+  }
+
+  .group{
+    flex-direction: row;
+  }
+
+  .mobileGroup{
+    display: flex;
+    justify-content: space-between;
   }
 }
