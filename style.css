@@ -149,9 +149,9 @@ footer p {
   }
 
   form {
-    position: static;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   form div {
@@ -173,14 +173,14 @@ footer p {
     flex-direction: row;
   }
 
-  #ideas .group div{
-    display: flex;
-    flex-direction: column;
-  }
-
   #about .item{
     width: 25%;
     margin: 10px;
+  }
+
+  #ideas .group div{
+    display: flex;
+    flex-direction: column;
   }
 
   #ideas .item{
@@ -191,8 +191,18 @@ footer p {
     margin: 10px;
   }
 
-  .mobileGroup{
+  #host{
     display: flex;
-    justify-content: space-between;
   }
+
+  #host div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #host .item{
+    justify-content: center;
+  }
+
 }
